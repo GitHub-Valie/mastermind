@@ -4,17 +4,60 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>🧠 Mastermind - Play🧠</title>
+        
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+        <script src="./scripts/generateCode.js" defer></script>
+        <script src="./scripts/displayCheat.js" defer></script>
+        <script src="./scripts/displayPosition.js" defer></script>
+
+        <title> Mastermind 🧠 Play </title>
     </head>
     <body>
+
         <header>
-            This is the header
+            <h1>Mastermind</h1>
+            <nav>
+                <a class="navbar-link" href="./index.html">Back to main menu</a>
+            </nav>
         </header>
-        <section>
-            This is the section
+
+        <section id="mastermind">
+            <article>
+                <h2>🧠 Welcome to Mastermind 🧠</h2>
+    
+                <div>
+                    <button type="button" id="generateCode">
+                        Generate code
+                    </button>
+                    <div id="displayGeneratedCode"></div>
+        
+                    <button type="button" id="cheatCode">
+                        Cheat (Display code)
+                    </button>
+                    <div id="displayCheat"></div>
+                </div>
+    
+                <div>
+                    <input type="number" placeholder="color 1" id="color1">
+                    <input type="number" placeholder="color 2" id="color2">
+                    <input type="number" placeholder="color 3" id="color3">
+                    <input type="number" placeholder="color 4" id="color4">
+                    <button type="button" id="showHints">
+                        Submit
+                    </button>
+                </div>
+                
+                <div id="displayRightPositioning"></div>
+            </article>
+
         </section>
+
         <footer>
             This is the footer
         </footer>
+
     </body>
 </html>
