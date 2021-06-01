@@ -35,3 +35,8 @@ POUR i ALLANT DE 1 A 4
 	Générer une couleur aléatoire et l'affecter au tableau solution
 FIN POUR
 ```
+
+## Outils
+
+- [Coolors pour composer une palette de couleurs](https://coolors.co/1a0035-00001e-9affbc-ff005a)
+- [Google Fonts pour les polices](https://fonts.google.com/)
