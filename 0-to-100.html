@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        
+        <script src='./scripts/generateNumber.js' defer></script>
+        <script src='./scripts/displayNumberHint.js' defer></script>
+
+        <title>Mastermind 🧠 Home</title>
+    </head>
+    <body>
+        <header id="to100-header">
+            <h1>0 to 100</h1>
+            <nav>
+                <a class="navbar-link" href="./index.html">Back to main menu</a>
+            </nav>
+        </header>
+        <section id="to100-menu">
+            <article>
+                <h2>Guess the number between 0 and 100</h2>
+                <div>
+                    <input id="userGuess" type="number" min="0" max="100" placeholder="50"/>
+                    <button type="button" id="showNumberHint">
+                        Submit
+                    </button>
+                    <div id="displayNumberHint"></div>
+                </div>
+            </article>
+        </section>
+    </body>
+</html>

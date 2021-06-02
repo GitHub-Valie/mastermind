@@ -9,29 +9,98 @@ body {
     background-color: #0C002B;
 }
 
-#mastermind-header {
+#to100-header {
     display: flex;
     width: 100%;
     min-height: 3em;
-    background-color: #FF005A;
-    color: #0C002B;
+    background-color: #00FFBC;
+    color: 	#0C002B;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     font-family: 'Roboto Mono', monospace;
 }
 
-#mastermind-header>*{
+#to100-header>* {
     padding: 0 20px;
 }
 
-#mastermind-header>nav>.navbar-link {
-    color: #ffffff;
+#to100-header>nav>.navbar-link {
+    color: #0C002B;
 }
 
-#mastermind-header>nav>.navbar-link:hover {
-    color: #00FFBC;
+#to100-header>nav>.navbar-link:hover {
+    color: #FFFFFF;
 }
+
+#to100-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    /* border: solid 1px white; */
+}
+
+#to100-menu>article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    background-color: #0C002B;
+    border: solid 1px #00FFBC;
+    color: #ffffff;
+    border-radius: 0.2em;
+    margin-top: 5em;
+    padding: 1em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#to100-menu>article>h2 {
+    text-align: center; 
+}
+
+#to100-menu>article>div {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    /* border: solid 1px white; */
+    min-width: 60%;
+}
+
+#to100-menu>article>div>* {
+    margin: 1em;
+    border-radius: 0.2em;
+}
+
+#to100-menu>article>div>button {
+    border: transparent;
+    background-color: #00FFBC;
+    color:#0C002B;
+    height: 3em;
+    min-width: 100px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 1em;
+}
+
+#to100-menu>article>div>input {
+    border: solid 1px #00FFBC;
+    background-color: transparent;
+    color:#00FFBC;
+    height: 3em;
+    min-width: 100px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+#to100-menu>article>div>input::placeholder {
+    color: #FFFFFF;
+} 
+
+#to100-menu>article>div>div {
+    text-align: center;
+} 
 
 #menu {
     display: flex;
@@ -81,6 +150,30 @@ a {
     margin: 0 auto;
     /* width: 100%; */
     /* color: black */
+}
+
+#mastermind-header {
+    display: flex;
+    width: 100%;
+    min-height: 3em;
+    background-color: #FF005A;
+    color: #0C002B;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#mastermind-header>*{
+    padding: 0 20px;
+}
+
+#mastermind-header>nav>.navbar-link {
+    color: #ffffff;
+}
+
+#mastermind-header>nav>.navbar-link:hover {
+    color: #00FFBC;
 }
 
 #mastermind>h1 {
