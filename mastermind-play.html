@@ -27,32 +27,34 @@
         <section id="mastermind">
             <!-- <h1>🧠 Welcome to Mastermind 🧠</h1> -->
             <article>
+
                 <div>
                     <button type="button" id="generateCode">
                         Generate code
                     </button>
-
                     <button type="button" id="cheatCode">
                         Cheat
                     </button>
                 </div>
-    
                 <div>
-                    <input type="number" placeholder="*" id="color1">
-                    <input type="number" placeholder="*" id="color2">
-                    <input type="number" placeholder="*" id="color3">
-                    <input type="number" placeholder="*" id="color4">
+                    <div id="code">
+                        <input type="number" placeholder="*" min="1" max="6" id="color1">
+                        <input type="number" placeholder="*" min="1" max="6" id="color2">
+                        <input type="number" placeholder="*" min="1" max="6" id="color3">
+                        <input type="number" placeholder="*" min="1" max="6" id="color4">
+                    </div>
                     <button type="button" id="showHints">
                         Submit
                     </button>
                 </div>
                 
             </article>
+
             <article id="console">
                 <h2>>_</h2>
                 <div id="displayGeneratedCode"></div>
-                <div id="displayCheat"></div>
                 <div id="displayRightPositioning"></div>
+                <div id="displayCheat"></div>
             </article>
         </section>
 
