@@ -8,26 +8,28 @@ let displayRightPosition = function () {
     userGuess[2] = document.getElementById('color3').value;
     userGuess[3] = document.getElementById('color4').value;
 
+    document.getElementById('displayRightPositioning').innerHTML += '... ';
+
     for (let i = 1; i <= codeLength; i += 1) {
         let guessedInt = userGuess[i - 1];
 
         if (guessedInt == 1) {
-            document.getElementById('displayRightPositioning').innerHTML += " red ";
+            document.getElementById('displayRightPositioning').innerHTML += " red / ";
         } else {
             if (guessedInt == 2) {
-                document.getElementById('displayRightPositioning').innerHTML += " green ";
+                document.getElementById('displayRightPositioning').innerHTML += " green / ";
             } else {
                 if (guessedInt == 3) {
-                    document.getElementById('displayRightPositioning').innerHTML += " blue ";
+                    document.getElementById('displayRightPositioning').innerHTML += " blue / ";
                 } else {
                     if (guessedInt == 4) {
-                        document.getElementById('displayRightPositioning').innerHTML += " yellow ";
+                        document.getElementById('displayRightPositioning').innerHTML += " yellow / ";
                     } else {
                         if (guessedInt == 5) {
-                            document.getElementById('displayRightPositioning').innerHTML += " brown ";
+                            document.getElementById('displayRightPositioning').innerHTML += " brown / ";
                         } else {
                             if (guessedInt == 6) {
-                                document.getElementById('displayRightPositioning').innerHTML += " orange ";
+                                document.getElementById('displayRightPositioning').innerHTML += " orange / ";
                             }
                         }
                     }
@@ -45,9 +47,10 @@ let displayRightPosition = function () {
     }
 
     if (rightPositionCount == 4) {
-        alert("You have cracked the code!")
+        // console.log('CODE HAS BEEN CRACKED');
+        document.getElementById('displayRightPositioning').innerHTML += '<br>' + '... CODE BREAKED ...';
     } else {
-        document.getElementById('displayRightPositioning').innerHTML += 'You have ' + rightPositionCount + ' in the right position.' + '<br>';
+        document.getElementById('displayRightPositioning').innerHTML += '<br>' + '... ' + rightPositionCount + ' of ' + codeLength + ' valid' + '<br />';
     }
 
 }

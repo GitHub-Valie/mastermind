@@ -23,7 +23,7 @@ let randomCode = function () {
     // console.log(codeLength);
 
     // Effacer la zone d'affichage
-    document.getElementById('displayGeneratedCode').innerHTML = "code: ";
+    document.getElementById('displayGeneratedCode').innerHTML = "... generating code ..." + '<br>';
     // document.getElementById('displayGeneratedCode').innerHTML += '<br>';
 
     // Pour i allant de 1 à codeLength
@@ -36,22 +36,28 @@ let randomCode = function () {
 
         // console.log(randomInt);
         if (randomInt == 1) {
-            document.getElementById('displayGeneratedCode').innerHTML += " red ";
+            console.log('red');
+            // document.getElementById('displayGeneratedCode').innerHTML += " red ";
         } else {
             if (randomInt == 2) {
-                document.getElementById('displayGeneratedCode').innerHTML += " green ";
+                console.log('green');
+                // document.getElementById('displayGeneratedCode').innerHTML += " green ";
             } else {
                 if (randomInt == 3) {
-                    document.getElementById('displayGeneratedCode').innerHTML += " blue ";
+                    console.log('blue');
+                    // document.getElementById('displayGeneratedCode').innerHTML += " blue ";
                 } else {
                     if (randomInt == 4) {
-                        document.getElementById('displayGeneratedCode').innerHTML += " yellow ";
+                        console.log('yellow');
+                        // document.getElementById('displayGeneratedCode').innerHTML += " yellow ";
                     } else {
                         if (randomInt == 5) {
-                            document.getElementById('displayGeneratedCode').innerHTML += " brown ";
+                            console.log('brown');
+                            // document.getElementById('displayGeneratedCode').innerHTML += " brown ";
                         } else {
                             if (randomInt == 6) {
-                                document.getElementById('displayGeneratedCode').innerHTML += " orange ";
+                                console.log('orange');
+                                // document.getElementById('displayGeneratedCode').innerHTML += " orange ";
                             }
                         }
                     }
@@ -59,9 +65,10 @@ let randomCode = function () {
             }
         }
 
-        document.getElementById('displayGeneratedCode').innerHTML += '/';
-
     }
+    
+    document.getElementById('displayGeneratedCode').innerHTML += '... code has been generated ...' + '<br>';
+
 }
 
 document.getElementById('generateCode').addEventListener('click', randomCode, false);
