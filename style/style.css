@@ -14,11 +14,11 @@ body {
     background-color: #0C002B;
 }
 
-header {
+#mastermind-header {
     display: flex;
     width: 100%;
     min-height: 3em;
-    background-color: #ff005aff;
+    background-color: #FF005A;
     color: #0C002B;
     justify-content: space-between;
     align-items: center;
@@ -26,15 +26,15 @@ header {
     font-family: 'Roboto Mono', monospace;
 }
 
-header>*{
+#mastermind-header>*{
     padding: 0 20px;
 }
 
-header>nav>.navbar-link {
+#mastermind-header>nav>.navbar-link {
     color: #ffffff;
 }
 
-header>nav>.navbar-link:hover {
+#mastermind-header>nav>.navbar-link:hover {
     color: #00FFBC;
 }
 
@@ -53,7 +53,7 @@ header>nav>.navbar-link:hover {
     border: solid 1px #FF005A;
     color: #ffffff;
     border-radius: 0.2em;
-    margin: 5em;
+    margin-top: 5em;
     padding: 1em;
     font-family: 'Roboto Mono', monospace;
 }
@@ -82,8 +82,14 @@ a {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 100%;
+    /* width: 100%; */
     /* color: black */
+}
+
+#mastermind>h1 {
+    border: solid 1px white;
+    margin: 5em;
+    color: #ffffff;
 }
 
 #mastermind>article {
@@ -92,8 +98,8 @@ a {
     flex-direction: row;
     align-items: center;
     /* justify-content: center; */
-    /* border: solid 1px black; */
-    width: 100%;
+    border: solid 1px #FF005A;
+    width: 50%;
     /* height: 300px; */
     margin: 5em;
 }
@@ -113,10 +119,11 @@ a {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 1em;
-    width: 100%;
+    /* width: 100%; */
     color: #ffffff;
+    font-family: 'Roboto Mono', monospace;
 }
 
 #mastermind>article>*>* {
@@ -136,12 +143,23 @@ a {
     border-radius: 0.2em;
     margin: 1em;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
 #mastermind>article>*>input {
+    background-color: #0C002B;
     height: 2rem;
-    width: 80px;
+    width: 2.5rem;
     margin: 0.5em;
+    border: solid 1px;
+    border-color: #FF005A;
+    border-radius: 0.2em;
+    color: #ffffff;
+    text-indent: 1em;
+}
+
+#mastermind>article>*>input::placeholder {
+    color: #ffccde;
 }
 
 #mastermind>article>button {
@@ -153,6 +171,38 @@ a {
     width: 200px;
 }
 
+#mastermind>#console {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    background-color: #000000;
+    color: #00FFBC;
+    border-color: #00FFBC;
+}
+
+#mastermind>#console>* {
+    /* border: solid 1px white; */
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+#mastermind>#console>h2 {
+    color: #00FFBC;
+    margin: 1em;
+}
+
+#mastermind>#console>#displayGeneratedCode {
+    color: #00FFBC;
+}
+
+#mastermind>#console>#displayCheat {
+    color: #FF005A;
+}
+
+#mastermind>#console>#displayRightPositioning {
+    color: #00FFBC;
+}
 
 /* #mastermind>h2 {
     margin: 5em;
