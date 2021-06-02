@@ -14,22 +14,22 @@ let displayRightPosition = function () {
         let guessedInt = userGuess[i - 1];
 
         if (guessedInt == 1) {
-            document.getElementById('displayRightPositioning').innerHTML += " red / ";
+            document.getElementById('displayRightPositioning').innerHTML += " 1 / ";
         } else {
             if (guessedInt == 2) {
-                document.getElementById('displayRightPositioning').innerHTML += " green / ";
+                document.getElementById('displayRightPositioning').innerHTML += " 2 / ";
             } else {
                 if (guessedInt == 3) {
-                    document.getElementById('displayRightPositioning').innerHTML += " blue / ";
+                    document.getElementById('displayRightPositioning').innerHTML += " 3 / ";
                 } else {
                     if (guessedInt == 4) {
-                        document.getElementById('displayRightPositioning').innerHTML += " yellow / ";
+                        document.getElementById('displayRightPositioning').innerHTML += " 4 / ";
                     } else {
                         if (guessedInt == 5) {
-                            document.getElementById('displayRightPositioning').innerHTML += " brown / ";
+                            document.getElementById('displayRightPositioning').innerHTML += " 5 / ";
                         } else {
                             if (guessedInt == 6) {
-                                document.getElementById('displayRightPositioning').innerHTML += " orange / ";
+                                document.getElementById('displayRightPositioning').innerHTML += " 6 / ";
                             }
                         }
                     }
