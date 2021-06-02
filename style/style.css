@@ -1,8 +1,3 @@
-/* CSS HEX */
-/* --russian-violet: #1a0035ff;
---xiketic: #00001eff;
---mint-green: #9affbcff;
---radical-red: #ff005aff; */
 
 * {
     margin: 0;
@@ -129,7 +124,6 @@ a {
     /* text-transform: uppercase; */
 }
 
-
 #mastermind>article>button {
     display: flex;
     flex-wrap: wrap;
@@ -216,14 +210,3 @@ a {
 #mastermind>#console>#displayCheat {
     color: #FF005A;
 }
-
-/* #mastermind>h2 {
-    margin: 5em;
-    font-family: 'Roboto Mono', monospace;
-    color: #ffffff;
-    width: 100%;
-}
-
-#mastermind>input {
-    width: 200px;
-} */
