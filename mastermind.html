@@ -8,56 +8,46 @@
         <link rel="stylesheet" href="./style/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-
-        <script src="./scripts/generateCode.js" defer></script>
-        <script src="./scripts/displayCheat.js" defer></script>
-        <script src="./scripts/displayPosition.js" defer></script>
-
-        <title> Mastermind 🧠 Play </title>
+        
+        <title>Mastermind 🧠 Home</title>
     </head>
     <body>
-
-        <header>
+        <header id="mastermind-header">
             <h1>Mastermind</h1>
             <nav>
-                <a class="navbar-link" href="./index.html">Back to main menu</a>
+                <a class="navbar-link" href="./rules.html">Rules</a>
+                <a class="navbar-link" href="./settings.html">Settings</a>
+                <a class="navbar-link" href="./scoreboard.html">Scoreboard</a>
             </nav>
         </header>
-
-        <section id="mastermind">
+        <section id="menu">
             <article>
-                <h2>🧠 Welcome to Mastermind 🧠</h2>
-    
-                <div>
-                    <button type="button" id="generateCode">
-                        Generate code
-                    </button>
-                    <div id="displayGeneratedCode"></div>
-        
-                    <button type="button" id="cheatCode">
-                        Cheat (Display code)
-                    </button>
-                    <div id="displayCheat"></div>
-                </div>
-    
-                <div>
-                    <input type="number" placeholder="color 1" id="color1">
-                    <input type="number" placeholder="color 2" id="color2">
-                    <input type="number" placeholder="color 3" id="color3">
-                    <input type="number" placeholder="color 4" id="color4">
-                    <button type="button" id="showHints">
-                        Submit
-                    </button>
-                </div>
-                
-                <div id="displayRightPositioning"></div>
+                <h2>Play 🎲</h2>
+                <a href="./mastermind-play.html" target="_blank">
+                    Play Mastermind
+                </a>
             </article>
-
+            <article>
+                <h2>Rules 📜</h2>
+                <a href="./rules.html" target="_blank">
+                    Read the rules
+                </a>
+            </article>
+            <article>
+                <h2>Settings ⚙</h2>
+                <a href="./settings.html" target="_blank">
+                    Customize settings
+                </a>
+            </article>
+            <article>
+                <h2>Scoreboard 🏆</h2>
+                <a href="./scoreboard.html" target="_blank">
+                    Check the scoreboards
+                </a>
+            </article>
         </section>
-
         <footer>
             This is the footer
         </footer>
-
     </body>
 </html>
