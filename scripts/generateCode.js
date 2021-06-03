@@ -1,5 +1,5 @@
 // Générer un code 
-let code = [0, 0, 0, 0];
+const code = [0, 0, 0, 0];
 
 // console.log(code.length);
 
@@ -15,20 +15,17 @@ function randomizeInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+// Créer un code aléatoirement, à l'aide de la fonction randomizeInt
 let randomCode = function () {
-
-    // Longueur de la suite à décoder
-    codeLength = 4;
-
-    // console.log(codeLength);
 
     // Effacer la zone d'affichage
     document.getElementById('displayGeneratedCode').innerHTML = "... generating code ..." + '<br>';
     // document.getElementById('displayGeneratedCode').innerHTML += '<br>';
 
     // Pour i allant de 1 à codeLength
-    for (let i = 1; i <= codeLength ; i += 1) {
+    for (let i = 1; i <= code.length ; i += 1) {
 
+        // randomInt est un entier positif, appartenant à [1, 6], généré aléatoirement
         let randomInt = randomizeInt(1, 6);
 
         // Remplir le code avec les entiers générés
@@ -36,27 +33,33 @@ let randomCode = function () {
 
         // console.log(randomInt);
         if (randomInt == 1) {
-            console.log('red');
+            // console.log('red');
+            console.log('1');
             // document.getElementById('displayGeneratedCode').innerHTML += " red ";
         } else {
             if (randomInt == 2) {
-                console.log('green');
+                // console.log('green');
+                console.log('2');
                 // document.getElementById('displayGeneratedCode').innerHTML += " green ";
             } else {
                 if (randomInt == 3) {
-                    console.log('blue');
+                    // console.log('blue');
+                    console.log('3');
                     // document.getElementById('displayGeneratedCode').innerHTML += " blue ";
                 } else {
                     if (randomInt == 4) {
-                        console.log('yellow');
+                        // console.log('yellow');
+                        console.log('4');
                         // document.getElementById('displayGeneratedCode').innerHTML += " yellow ";
                     } else {
                         if (randomInt == 5) {
-                            console.log('brown');
+                            // console.log('brown');
+                            console.log('5');
                             // document.getElementById('displayGeneratedCode').innerHTML += " brown ";
                         } else {
                             if (randomInt == 6) {
-                                console.log('orange');
+                                // console.log('orange');
+                                console.log('6');
                                 // document.getElementById('displayGeneratedCode').innerHTML += " orange ";
                             }
                         }
@@ -64,7 +67,6 @@ let randomCode = function () {
                 }
             }
         }
-
     }
     
     document.getElementById('displayGeneratedCode').innerHTML += '... code has been generated ...' + '<br>';
