@@ -21,38 +21,67 @@
         <section>
             <article id="settings-dashboard">
                 <h2>>_ Settings dashboard</h2>
-                <div id="settings">
-                    <div>
-                        <h3>Game mode</h3>
-                        <p>
-                            Defaults to default
-                        </p>
-                    </div>
-                    <div>
-                        <h3>Timer</h3>
-                        <p>
-                            Default: None
-                        </p>
-                    </div>
-                    <div>
-                        <h3>Number of tries</h3>
-                        <p>
-                            Default: None
-                        </p>
-                    </div>
-                    <div>
-                        <h3>Code length</h3>
-                        <p>
-                            Default: 4
-                        </p>
-                    </div>
-                    <div>
-                        <h3>Possible digits</h3>
-                        <p>
-                            Default: 1 to 6
-                        </p>
-                    </div>
-                </div>
+                    <form method="POST" action="/rendez-vous"> 
+                        
+                        <!-- Game Mode -->
+                        <div>
+                            <label for="game-mode">
+                                ... Game mode ...
+                            </label>
+                            <select id="game-mode">
+                                <option>Easy</option>
+                                <option>Default</option>
+                                <option>Mayhem</option>
+                            </select>
+                        </div>
+            
+                        <!-- Timer -->
+                        <div>
+                            <label>
+                                ... Timer ...
+                            </label>
+                            <button>
+                                On/off
+                            </button>
+                        </div>
+                
+                        <!-- Tries -->
+                        <div>
+                            <label>
+                                ... Number of tries ...
+                            </label>
+                            <input type="number" placeholder="default: no limit" />
+                        </div>
+
+                        <!-- Code length -->
+                        <div>
+                            <label>
+                                ... Code length ...
+                            </label>
+                            <input type="number" placeholder="default: 4" />
+                        </div>
+
+                        <!-- Possible digits -->
+                        <div>
+                            <label>
+                                ... Possible digits ...
+                            </label>
+                            <input type="number" placeholder="default: 6" />
+                        </div>
+
+                        <!-- Submit form -->
+                        <div>
+                            <button type="submit">
+                                Submit
+                            </button>
+                    
+                            <!-- Reset fields -->
+                            <button type="reset">
+                                Reset
+                            </button>
+                        </div>
+                
+                    </form>
             </article>
         </section>
         <footer>

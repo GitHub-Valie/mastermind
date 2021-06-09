@@ -4,6 +4,40 @@
     box-sizing: border-box;
 }
 
+/* Base body style */
+body {
+    /* Color */
+    background-color: #0C002B;
+    color: #FFFFFF;
+
+    /* Fonts */
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Footer */
+body>footer {
+    margin: 2em;
+    text-align: center;
+}
+
+/* Rules.html */
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a {
+    font-family: 'Roboto Mono', monospace;
+    font-size: small;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    color:#FF005A;
+}
+
 #to100-header {
     display: flex;
     width: 100%;
@@ -123,178 +157,6 @@
 #menu>article:hover a {
     color: #00FFBC;
 }
-
-a {
-    font-family: 'Roboto Mono', monospace;
-    font-size: small;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.2em;
-    color:#FF005A;
-}
-
-/* #mastermind {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 0 auto;
-}
-
-#mastermind-header {
-    display: flex;
-    width: 100%;
-    min-height: 3em;
-    background-color: #FF005A;
-    color: #0C002B;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    font-family: 'Roboto Mono', monospace;
-}
-
-#mastermind-header>*{
-    padding: 0 20px;
-}
-
-#mastermind-header>nav>.navbar-link {
-    color: #ffffff;
-}
-
-#mastermind-header>nav>.navbar-link:hover {
-    color: #00FFBC;
-}
-
-#mastermind>h1 {
-    margin: 5em;
-    color: #ffffff;
-}
-
-#mastermind>article {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px #FF005A;
-    width: 50%;
-    margin-top: 5em;
-    font-family: 'Roboto Mono', monospace;
-}
-
-#mastermind>article>* {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    font-family: 'Roboto Mono', monospace;
-}
-
-#mastermind>article>h2 {
-    text-align: center;
-    width: 100%;
-    color: #FF005A;
-    font-family: 'Roboto Mono', monospace;
-}
-
-#mastermind>article>button {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    background-color: #FF005A;
-    border: transparent;
-    border-radius: 0.2em;
-    margin: 1em;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-#mastermind>article>*>button {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    min-width: 200px;
-    height: 2rem;
-    background-color: #FF005A;
-    border: transparent;
-    border-radius: 0.2em;
-    margin: 1em;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: 'Roboto Mono', monospace;
-}
-
-#mastermind>article>*>#code {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#mastermind>article>*>#code>input {
-    background-color: #0C002B;
-    height: 2rem;
-    width: 3rem;
-    margin: 0.5em;
-    border: solid 1px;
-    border-color: #FF005A;
-    border-radius: 0.2em;
-    color: #ffffff;
-    text-indent: 1.2rem;
-    font-family: 'Roboto Mono', monospace;
-}
-
-#mastermind>article>*>#code>input::placeholder {
-    color: #ffccde;
-}
-
-#mastermind>article>button {
-    height: 2rem;
-    background-color: #FF005A;
-    border: transparent;
-    border-radius: 0.2em;
-    margin: 1em;
-    width: 200px;
-}
-
-#mastermind>#console {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    background-color: #000000;
-    color: #00FFBC;
-    border-color: #00FFBC;
-}
-
-#mastermind>#console>* {
-    width: 100%;
-    margin-bottom: 2em;
-    justify-content: flex-start;
-    margin: 1em;
-    color: #00FFBC;
-}
-
-#mastermind>#console>#displayCheat {
-    color: #FF005A;
-} */
-
-/* Base body style */
-body {
-    /* Color */
-    background-color: #0C002B;
-    color: #FFFFFF;
-
-    /* Fonts */
-    font-family: 'Roboto Mono', monospace;
-}
-
 
 /* Index.html style */
 #home-body {
@@ -416,7 +278,8 @@ body {
     /* Dimensions */
     width: 70%;
 
-    margin: 0.5em;
+    margin-top: 8em;
+    /* margin: 0.5em; */
     padding: 0.5em;
 
     /* Colors */
@@ -551,14 +414,6 @@ section>#scoreboard>table>* {
     text-align: left;
 }
 
-/* Rules.html */
-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 section>article {
     margin-top: 5em;
     width: 60%;
@@ -585,8 +440,22 @@ section>#settings-dashboard>*>* {
     /* border: solid 1px #FF005A; */
 }
 
-/* Footer */
-body>footer {
-    margin: 2em;
-    text-align: center;
+section>#rules-details {
+
+    border: solid 4px #000000;
+    border-radius: 0.2em;
+    
+    background-color: #0B0B0B;
+}
+
+section>#rules-details>* {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1em;
+    /* border: solid 1px yellow; */
+}
+
+section>#rules-details>*>li {
+    list-style-type: none;
 }
