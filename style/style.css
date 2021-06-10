@@ -459,3 +459,94 @@ section>#rules-details>* {
 section>#rules-details>*>li {
     list-style-type: none;
 }
+
+section>#settings-dashboard>form {
+    /* border: solid 1px white; */
+    display: flex;
+    flex-direction: column;
+}
+
+section>#settings-dashboard>form>* {
+    /* border: solid 1px yellow; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+section>#settings-dashboard>form>.form-validation {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+section>#settings-dashboard>form>*>input {
+    border: #FFFFFF;
+
+    font-family: 'Roboto Mono', monospace;
+
+    background-color: #0B0B0B;
+    color: #FFFFFF;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+input[type=checkbox]:focus {
+    outline: 0;
+}
+
+section>#settings-dashboard>form>*>#toggle-timer {
+    height: 20px;
+    width: 40px;
+    border-radius: 16px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    border: 2px solid #000000;
+    background: #000000;
+    transition: all 0.2s ease;
+}
+
+section>#settings-dashboard>form>*>#toggle-timer:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FF005A;
+    box-shadow: 0 1px 2px rgba(44, 44, 44, 0.2);
+    transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+}
+
+section>#settings-dashboard>form>*>#toggle-timer:checked {
+    border-color: #FF005A;
+}
+
+section>#settings-dashboard>form>*>#toggle-timer:checked:after {
+    transform: translateX(20px);
+}
+
+section>#settings-dashboard>form>.form-validation>button {
+    border-radius: 0.2em;;
+    
+    color: #FFFFFF;
+    background-color: #FF005A;
+    border: transparent;
+
+    margin: 1em;
+    padding: 0.5em;
+}
+
+
+section>#settings-dashboard>form>*>input::placeholder {
+    font-family: 'Roboto Mono', monospace;
+    color: #FF005A;
+    text-align: right;
+}

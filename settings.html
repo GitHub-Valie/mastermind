@@ -21,67 +21,74 @@
         <section>
             <article id="settings-dashboard">
                 <h2>>_ Settings dashboard</h2>
-                    <form method="POST" action="/rendez-vous"> 
-                        
-                        <!-- Game Mode -->
-                        <div>
-                            <label for="game-mode">
-                                ... Game mode ...
-                            </label>
-                            <select id="game-mode">
-                                <option>Easy</option>
-                                <option>Default</option>
-                                <option>Mayhem</option>
-                            </select>
-                        </div>
-            
-                        <!-- Timer -->
-                        <div>
-                            <label>
-                                ... Timer ...
-                            </label>
-                            <button>
-                                On/off
-                            </button>
-                        </div>
-                
-                        <!-- Tries -->
-                        <div>
-                            <label>
-                                ... Number of tries ...
-                            </label>
-                            <input type="number" placeholder="default: no limit" />
-                        </div>
-
-                        <!-- Code length -->
-                        <div>
-                            <label>
-                                ... Code length ...
-                            </label>
-                            <input type="number" placeholder="default: 4" />
-                        </div>
-
-                        <!-- Possible digits -->
-                        <div>
-                            <label>
-                                ... Possible digits ...
-                            </label>
-                            <input type="number" placeholder="default: 6" />
-                        </div>
-
-                        <!-- Submit form -->
-                        <div>
-                            <button type="submit">
-                                Submit
-                            </button>
+                <form method="POST" action="/rendez-vous"> 
                     
-                            <!-- Reset fields -->
-                            <button type="reset">
-                                Reset
-                            </button>
+                    <!-- Game Mode -->
+                    <div>
+                        <label for="game-mode">
+                            ~ Game mode
+                        </label>
+                        <div>
+                            <input type="radio" id="Easy" name="game-mode" value="Easy" checked>
+                            <label for="Easy">Easy</label>
                         </div>
+                            
+                        <div>
+                            <input type="radio" id="Default" name="game-mode" value="Default">
+                            <label for="Default">Default</label>
+                        </div>
+                            
+                        <div>
+                            <input type="radio" id="Mayhem" name="game-mode" value="Mayhem">
+                            <label for="Mayhem">Mayhem</label>
+                        </div>
+                    </div>
+        
+                    <!-- Timer -->
+                    <div>
+                        <label>
+                            ~ Timer
+                        </label>
+                        <input type="checkbox" id="toggle-timer" checked>
+                    </div>
+            
+                    <!-- Tries -->
+                    <div>
+                        <label>
+                            ~ Number of tries
+                        </label>
+                        <input type="number" placeholder="unlimited" />
+                    </div>
+
+                    <!-- Code length -->
+                    <div>
+                        <label>
+                            ~ Code length
+                        </label>
+                        <input type="number" placeholder="4" />
+                    </div>
+
+                    <!-- Possible digits -->
+                    <div>
+                        <label>
+                            ~ Possible digits
+                        </label>
+                        <input type="number" placeholder="6" />
+                    </div>
+
+                    <!-- Submit form -->
+                    <div class="form-validation">
+                        <button type="submit">
+                            Submit
+                        </button>
                 
-                    </form>
+                        <!-- Reset fields -->
+                        <button type="reset">
+                            Reset
+                        </button>
+                    </div>
+            
+                </form>
             </article>
         </section>
         <footer>
